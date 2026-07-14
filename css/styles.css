@@ -1720,3 +1720,12 @@ img.team-photo {
   .brand:hover .brand-mark { animation: none; }
   .team-card .team-photo { transform: none; transition: none; }
 }
+
+/* ---------- About page hero (image background instead of flat paper) ---------- */
+
+.about-hero {
+  background-color: var(--paper);
+  background-image: url("../images/about-hero.svg");
+  background-size: cover;
+  background-position: center;
+}

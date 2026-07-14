@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 700" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Soft watercolour rainbow on cream paper">
+  <defs>
+    <filter id="wash" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="14"/>
+    </filter>
+    <filter id="washSoft" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="22"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="700" fill="#FBF3DC"/>
+
+  <!-- big rainbow sweeping out of the bottom-right corner, echoing the logo art -->
+  <g fill="none" stroke-linecap="round" filter="url(#wash)" opacity="0.55">
+    <path d="M960 880 A560 560 0 0 1 2080 880" stroke="#EE6D67" stroke-width="86" transform="translate(-80,-90)"/>
+    <path d="M1050 880 A470 470 0 0 1 1990 880" stroke="#F09A4B" stroke-width="86" transform="translate(-80,-90)"/>
+    <path d="M1140 880 A380 380 0 0 1 1900 880" stroke="#F7C97E" stroke-width="86" transform="translate(-80,-90)"/>
+    <path d="M1230 880 A290 290 0 0 1 1810 880" stroke="#7CC98F" stroke-width="86" transform="translate(-80,-90)"/>
+    <path d="M1320 880 A200 200 0 0 1 1720 880" stroke="#68BBFD" stroke-width="86" transform="translate(-80,-90)"/>
+  </g>
+
+  <!-- soft sun near the rainbow's rise, like the logo -->
+  <circle cx="1010" cy="150" r="58" fill="#F7C97E" opacity="0.6" filter="url(#washSoft)"/>
+  <circle cx="1010" cy="150" r="30" fill="#EFB65C" opacity="0.5" filter="url(#washSoft)"/>
+
+  <!-- faint second wash top-left so the paper doesn't feel empty behind the text -->
+  <g fill="none" stroke-linecap="round" filter="url(#washSoft)" opacity="0.18">
+    <path d="M-460 40 A420 420 0 0 1 380 40" stroke="#EE6D67" stroke-width="60"/>
+    <path d="M-390 40 A350 350 0 0 1 310 40" stroke="#F7C97E" stroke-width="60"/>
+    <path d="M-320 40 A280 280 0 0 1 240 40" stroke="#68BBFD" stroke-width="60"/>
+  </g>
+</svg>
